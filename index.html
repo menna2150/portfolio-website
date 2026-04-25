@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menna Abdelkader — Data Analyst & AI Specialist</title>
+  <meta name="description" content="Portfolio of Menna Mohamed Abdelkader — aspiring Data Analyst specializing in AI and Data Science." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Background glow -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">M</span>
+        <span class="logo-text">Menna.A</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-outline nav-cta">Let's Talk</a>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <span class="tag">
+          <span class="dot"></span> Available for internships & collaborations
+        </span>
+        <h1>
+          Hi, I'm <span class="gradient-text">Menna Abdelkader</span>
+          <br />
+          turning <span class="accent">data</span> into
+          <span class="accent">decisions</span>.
+        </h1>
+        <p class="hero-sub">
+          Aspiring Data Analyst specializing in AI and Data Science at E-JUST.
+          I build dashboards, train ML models, and transform raw numbers into
+          meaningful stories.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="assets/Menna-Abdelkader-CV.pdf" class="btn btn-outline" download>
+            <span>↓</span> Download CV
+          </a>
+          <a href="#contact" class="btn btn-ghost">Get in touch →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Languages</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="profile-card">
+          <div class="profile-avatar">
+            <img src="assets/menna.jpeg" alt="Menna Abdelkader" />
+          </div>
+          <div class="profile-info">
+            <h3>Menna Mohamed</h3>
+            <p>AI & Data Science · E-JUST</p>
+            <div class="profile-tags">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Power BI</span>
+              <span>ML</span>
+            </div>
+          </div>
+          <div class="profile-floating t1">📊</div>
+          <div class="profile-floating t2">🤖</div>
+          <div class="profile-floating t3">📈</div>
+          <div class="profile-floating t4">🐍</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span></span> scroll
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">01 — About</span>
+        <h2>A student of <span class="gradient-text">data</span>, driven by curiosity.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Computer Science student at <strong>Egypt-Japan University of Science and Technology (E-JUST)</strong>,
+            specializing in <strong>AI and Data Science</strong>. My journey blends rigorous computer-science fundamentals
+            with hands-on work in data analysis, machine learning, and visualization.
+          </p>
+          <p>
+            Through three internships — at <strong>DEPI</strong>, <strong>NTI</strong>, and
+            <strong>ITI</strong> — I've honed the full analytics pipeline: from ETL and data
+            wrangling in Python & SQL, to building predictive models, to storytelling with
+            Tableau and Power BI dashboards.
+          </p>
+          <p>
+            I'm driven by a simple idea: <em>every number tells a story, and every dashboard
+            should answer a question</em>. I'm looking to apply these skills to support real,
+            data-driven decisions.
+          </p>
+          <div class="about-meta">
+            <div><span>📍 Location</span><strong>Alexandria, Egypt</strong></div>
+            <div><span>🎓 Graduating</span><strong>June 2026</strong></div>
+            <div><span>🎯 Focus</span><strong>Data Analysis & ML</strong></div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="code-window">
+            <div class="code-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <pre><code><span class="c-kw">import</span> <span class="c-mod">pandas</span> <span class="c-kw">as</span> pd
+<span class="c-kw">import</span> <span class="c-mod">numpy</span> <span class="c-kw">as</span> np
+<span class="c-kw">from</span> <span class="c-mod">sklearn</span> <span class="c-kw">import</span> models
+
+<span class="c-kw">class</span> <span class="c-cls">Menna</span>:
+    name     = <span class="c-str">"Menna Abdelkader"</span>
+    role     = <span class="c-str">"Data Analyst"</span>
+    focus    = [<span class="c-str">"AI"</span>, <span class="c-str">"Data Science"</span>]
+    tools    = [<span class="c-str">"Python"</span>, <span class="c-str">"SQL"</span>,
+                <span class="c-str">"Power BI"</span>, <span class="c-str">"Tableau"</span>]
+    mission  = <span class="c-str">"turn data → decisions"</span>
+
+    <span class="c-kw">def</span> <span class="c-fn">build</span>(self, idea):
+        <span class="c-kw">return</span> insight(idea)</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">02 — Skills</span>
+        <h2>Tools I use to <span class="gradient-text">build & analyze</span>.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">💻</div>
+          <h3>Programming & Databases</h3>
+          <div class="pill-row">
+            <span class="pill">Python</span>
+            <span class="pill">R</span>
+            <span class="pill">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">📊</div>
+          <h3>Data Visualization</h3>
+          <div class="pill-row">
+            <span class="pill">Tableau</span>
+            <span class="pill">Power BI</span>
+            <span class="pill">Excel</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">📐</div>
+          <h3>Statistics & Math</h3>
+          <div class="pill-row">
+            <span class="pill">Descriptive Stats</span>
+            <span class="pill">Inferential Stats</span>
+            <span class="pill">A/B Testing</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🧹</div>
+          <h3>Data Manipulation</h3>
+          <div class="pill-row">
+            <span class="pill">ETL</span>
+            <span class="pill">Data Cleaning</span>
+            <span class="pill">Data Wrangling</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools & Platforms</h3>
+          <div class="pill-row">
+            <span class="pill">Jupyter</span>
+            <span class="pill">Git</span>
+            <span class="pill">Big Data</span>
+            <span class="pill">Google Sheets</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🤝</div>
+          <h3>Soft Skills</h3>
+          <div class="pill-row">
+            <span class="pill">Problem Solving</span>
+            <span class="pill">Critical Thinking</span>
+            <span class="pill">Teamwork</span>
+            <span class="pill">Communication</span>
+            <span class="pill">Time Management</span>
+            <span class="pill">Adaptability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience / Education -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">03 — Journey</span>
+        <h2>Education & <span class="gradient-text">Experience</span>.</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Oct 2022 — Jun 2026</div>
+          <div class="timeline-card">
+            <div class="t-head">
+              <div class="t-logo"><img src="assets/ejust.png" alt="E-JUST logo" /></div>
+              <div class="t-title">
+                <h3>Egypt-Japan University of Science and Technology</h3>
+                <p class="t-role">B.Sc. in Computer Science & Information Technology</p>
+              </div>
+              <span class="t-badge">Education</span>
+            </div>
+            <p class="t-desc">
+              Specialization in <strong>AI and Data Science</strong>. Building a strong
+              foundation in algorithms, machine learning, statistics, and data engineering.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Oct 2024 — May 2025</div>
+          <div class="timeline-card">
+            <div class="t-head">
+              <div class="t-logo"><img src="assets/depi.png" alt="DEPI logo" /></div>
+              <div class="t-title">
+                <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
+                <p class="t-role">Machine Learning Trainee</p>
+              </div>
+              <span class="t-badge t-badge-alt">Internship</span>
+            </div>
+            <p class="t-desc">
+              Applied machine-learning fundamentals across real datasets — building,
+              evaluating, and tuning models with Python and Scikit-learn.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-card">
+            <div class="t-head">
+              <div class="t-logo"><img src="assets/nti.jpeg" alt="NTI logo" /></div>
+              <div class="t-title">
+                <h3>National Telecommunication Institute (NTI)</h3>
+                <p class="t-role">Advanced Data Analysis Intern</p>
+              </div>
+              <span class="t-badge t-badge-alt">Internship</span>
+            </div>
+            <p class="t-desc">
+              Performed advanced analytics on complex datasets — statistical analysis,
+              visualization, and insight reporting for decision support.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-card">
+            <div class="t-head">
+              <div class="t-logo"><img src="assets/iti.png" alt="ITI logo" /></div>
+              <div class="t-title">
+                <h3>Information Technology Institute (ITI)</h3>
+                <p class="t-role">Web Development Intern</p>
+              </div>
+              <span class="t-badge t-badge-alt">Internship</span>
+            </div>
+            <p class="t-desc">
+              Gained hands-on experience building modern web applications — bridging my
+              data background with frontend and backend development practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">04 — Projects</span>
+        <h2>Selected <span class="gradient-text">work</span>.</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-thumb p-thumb-1">
+            <div class="thumb-label">AI · Deep Learning</div>
+            <div class="thumb-icon">🧠</div>
+          </div>
+          <div class="project-body">
+            <h3>Image Classification & Object Detection</h3>
+            <p>
+              Built a deep-learning system to classify images and detect objects in
+              real time, using Python with TensorFlow and Keras.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">TensorFlow</span>
+              <span class="pill">Keras</span>
+              <span class="pill">CNN</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb p-thumb-2">
+            <div class="thumb-label">NLP · Machine Learning</div>
+            <div class="thumb-icon">💬</div>
+          </div>
+          <div class="project-body">
+            <h3>Twitter Sentiment Analysis</h3>
+            <p>
+              Analyzed tweets using NLP to classify sentiment into positive, negative,
+              and neutral — trained and evaluated multiple ML models.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">NLP</span>
+              <span class="pill">Scikit-learn</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb p-thumb-3">
+            <div class="thumb-label">Data Viz · Excel</div>
+            <div class="thumb-icon">🚗</div>
+          </div>
+          <div class="project-body">
+            <h3>Road Accident Dashboard</h3>
+            <p>
+              Interactive Excel dashboard with pivot tables and charts to analyze
+              accident trends, risk areas, and time-based patterns.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Excel</span>
+              <span class="pill">Pivot Tables</span>
+              <span class="pill">Charts</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb p-thumb-4">
+            <div class="thumb-label">BI · Power BI</div>
+            <div class="thumb-icon">💰</div>
+          </div>
+          <div class="project-body">
+            <h3>Sales Data Mining Dashboard</h3>
+            <p>
+              Designed a Power BI dashboard exploring sales performance, customer
+              behavior, and key revenue insights across product segments.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Power BI</span>
+              <span class="pill">DAX</span>
+              <span class="pill">Data Mining</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb p-thumb-5">
+            <div class="thumb-label">Analytics · Power BI</div>
+            <div class="thumb-icon">🎵</div>
+          </div>
+          <div class="project-body">
+            <h3>Spotify Music Analytics</h3>
+            <p>
+              Interactive dashboard analyzing Spotify's Top 50 with 30+ DAX measures —
+              tracking artist performance, song popularity, and explicit-content trends.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Power BI</span>
+              <span class="pill">DAX</span>
+              <span class="pill">Visualization</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal project-card-ghost">
+          <div class="ghost-body">
+            <div class="ghost-plus">+</div>
+            <h3>More coming soon</h3>
+            <p>
+              I'm always building. Check back — or reach out to collaborate on
+              what's next.
+            </p>
+            <a href="#contact" class="btn btn-ghost">Work with me →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses + Languages -->
+  <section class="section" id="extras">
+    <div class="container extras-grid">
+      <div class="extras-col reveal">
+        <span class="section-eyebrow">05 — Courses</span>
+        <h2>Certifications & <span class="gradient-text">Courses</span></h2>
+        <ul class="course-list">
+          <li>
+            <span class="course-dot">📊</span>
+            <div>
+              <strong>Data Analysis</strong>
+              <p>Power BI · Excel · Tableau</p>
+            </div>
+          </li>
+          <li>
+            <span class="course-dot">🔐</span>
+            <div>
+              <strong>Cyber Security Concepts</strong>
+              <p>Core principles and defensive practices</p>
+            </div>
+          </li>
+          <li>
+            <span class="course-dot">🗄️</span>
+            <div>
+              <strong>Database Management Principles</strong>
+              <p>SQL · Relational design</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="extras-col reveal">
+        <span class="section-eyebrow">06 — Languages</span>
+        <h2>Spoken <span class="gradient-text">Languages</span></h2>
+        <div class="lang-list">
+          <div class="lang-row">
+            <div class="lang-head"><span>🇪🇬 Arabic</span><em>Native</em></div>
+            <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+          </div>
+          <div class="lang-row">
+            <div class="lang-head"><span>🇬🇧 English</span><em>B2 · Proficient</em></div>
+            <div class="lang-bar"><div class="lang-fill" style="width:75%"></div></div>
+          </div>
+          <div class="lang-row">
+            <div class="lang-head"><span>🇫🇷 French</span><em>A1 · Beginner</em></div>
+            <div class="lang-bar"><div class="lang-fill" style="width:25%"></div></div>
+          </div>
+          <div class="lang-row">
+            <div class="lang-head"><span>🇯🇵 Japanese</span><em>A1 · Beginner</em></div>
+            <div class="lang-bar"><div class="lang-fill" style="width:25%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <span class="section-eyebrow">07 — Contact</span>
+        <h2>Let's <span class="gradient-text">build</span> something together.</h2>
+        <p class="contact-sub">
+          Have a project, an internship opportunity, or just want to chat about
+          data and AI? My inbox is open.
+        </p>
+
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:menna.abdelkader@ejust.edu.eg">
+            <div class="cc-icon">✉️</div>
+            <div>
+              <span>Email</span>
+              <strong>menna.abdelkader@ejust.edu.eg</strong>
+            </div>
+          </a>
+
+          <a class="contact-card" href="tel:+201228796748">
+            <div class="cc-icon">📞</div>
+            <div>
+              <span>Phone</span>
+              <strong>+20 122 879 6748</strong>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://www.linkedin.com/in/menna-abdelkader-595837277" target="_blank" rel="noopener">
+            <div class="cc-icon">🔗</div>
+            <div>
+              <span>LinkedIn</span>
+              <strong>menna-abdelkader</strong>
+            </div>
+          </a>
+
+          <div class="contact-card static">
+            <div class="cc-icon">📍</div>
+            <div>
+              <span>Location</span>
+              <strong>Alexandria, Egypt</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-buttons">
+          <a href="mailto:menna.abdelkader@ejust.edu.eg" class="btn btn-primary btn-big">
+            Send me an email →
+          </a>
+          <a href="assets/Menna-Abdelkader-CV.pdf" class="btn btn-outline btn-big" download>
+            ↓ Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        © <span id="year"></span> Menna Mohamed Abdelkader · Built with care.
+      </div>
+      <div class="footer-links">
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
